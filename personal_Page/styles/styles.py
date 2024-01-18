@@ -1,7 +1,7 @@
 import reflex as rx
+from enum import Enum
 from .fonts import Font
 from .colors import Color, TextColor
-
 
 STYLESHEETS = [
     "https://unpkg.com/nes.css/css/nes.css",
@@ -12,3 +12,10 @@ BASE_STYLE = {
     "color": TextColor.PRIMARY.value,
     "background": Color.PRIMARY.value
 }
+
+class Size(Enum):
+    SMALL="0.25em"
+    DEFAULT="1em"
+    BIG="2em"
+    VERY_BIG="4em"
+    
