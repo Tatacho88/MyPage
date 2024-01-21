@@ -6,10 +6,12 @@ from personal_Page.components.link_icon import link_icon
 def navbar() -> rx.Component:
     return rx.vstack(
         rx.hstack(
-            rx.avatar(
-              name="Jeison Santamaria"
+            rx.image(
+                src= "jeison-santamaria.png",
+                alt= "iniciales con font game over",
+                width="16em",
+                height="4em"
             ),
-            rx.text("Jeison Santamaria"),
             rx.spacer(),
             link_icon(
                 "facebook",
